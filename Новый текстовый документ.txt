@@ -1,0 +1,45 @@
+// colors
+
+axios.post('http://localhost:8080/colors', {
+  name: "white",
+  hex_code: 121212
+});
+axios.get('http://localhost:8080/colors')
+  .then(response => {
+    for (color of response.data) {
+      console.log(color);
+    }
+  });
+
+  let arr = [{
+    ingredient: "strawberries",
+    amount: "1/2 cup"
+  }, {
+    ingredient: 'blueberries',
+    amount: "1/4 cup"
+  }, {
+    ingredient: "raw spinach",
+    amount: "1 cup"
+  }, {
+    ingredient: "water",
+    amount: "1 cup"
+  }];
+
+  axios.post('http://localhost:8080/recipes', {
+    name: "Purple Passion Smoothie",
+    description: "This Purple Passion Green Smoothie recipe is a spinach smoothie recipe that’s full of antioxidants thanks to the strawberries and blueberries. The flavors all blend perfectly into a really delicious, mellow, creamy weight loss smoothie that’s also got a fun purple color.",
+    image_url: "images/purple-smoothie.png",
+    time: "10",
+    servings: 1,
+    complexity: 2,
+    ingredients: JSON.stringify(arr),
+    color_id: 4
+  });
+
+
+  axios.patch('http://localhost:8080/recipes/3', {
+    name: "Bluberry Smoothie"
+  });
+  axios.patch('http://localhost:8080/recipes/4', {
+    name: "Strawberry Smoothie"
+  });

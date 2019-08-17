@@ -1,0 +1,53 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+$main-font: 'Quicksand', sans-serif;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 231, 191);
+  font-family: $main-font;
+}
+
+.colors_container {
+  display: flex;
+  justify-content: center;
+}
+
+.color-block {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.color-block:hover {
+  box-shadow: 0 0 10px 7px #ffffff !important;
+}
+
+.recipes_container {
+  width: 800px;
+  margin-top: 30px;
+}
+
+.recipes-list {
+  &__item {
+    margin-top: 20px;
+  }
+}
+
+.complexity {
+  margin-top: 10px;
+}
