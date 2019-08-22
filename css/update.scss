@@ -1,0 +1,70 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+$main-font: 'Quicksand', sans-serif;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $main-font;
+}
+
+.success-info {
+  top: 40%;
+  display: none;
+  position: absolute;
+  text-align: center;
+
+  &__text {
+    font-size: 30px;
+    color: #ff9120;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    font-size: 23px;
+    color: #095730;
+    text-decoration: underline;
+  }
+}
+
+.update-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__item {
+    width: 500px;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-top: 8px;
+    font-family: $main-font;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #d4d3d1;
+  }
+
+  &__button {
+    background-color: #ec7f00;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+    height: 45px;
+    width: 150px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.label {
+  width: 500px;
+  align-self: flex-start;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.description-text {
+  resize: none;
+}

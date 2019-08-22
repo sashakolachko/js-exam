@@ -3,14 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Colors</title>
+  <title>Color Taste</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
-  <main class="container">
-    <div class="colors_container" id="colors">
+  <div class="banner">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="images/icon.png" alt="logo"></a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="pages/add-new-recipe.html">Add Recipe</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div class="banner__text">
+      <h1 class="banner__text__header">Color Taste</h1>
+    </div>
+
+    <div class="scroll">
+      <p class="scroll__text">Get started</p>
+      <a href="#colors">
+        <img src="images/arrow.png" alt="scroll">
+      </a>
+    </div>
+
+  </div>
+
+  <main id="main" class="container">
+    <div class="colors_container" id="colors">
     </div>
     <div class="recipes_container" id="recipes">
       <ul id="recipes-list">
@@ -19,7 +44,9 @@
     </div>
 
   </main>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" charset="utf-8"></script>
+  <script src="js/fillData.js" charset="utf-8"></script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 
