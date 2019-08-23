@@ -77,7 +77,7 @@ let recipes = [{
 }, {
   name: "One more pasta",
   description: "Wash and dry all produce. Bring a large pot of salted water to a boil. Trim woody bottom ends from baby broccoli, then cut stalks and florets into 1-inch pieces. Remove sausage from casings.\nOnce water is boiling, add orecchiette to pot. Cook, stirring occasionally, until al dente, 9-12 minutes. Carefully scoop out and reserve ½ cup pasta cooking water, then drain.\nHeat a large drizzle of olive oil in a large pan over medium heat. Add baby broccoli and 4 tsp water. Cover and steam 3 minutes. Uncover and increase heat to medium high. Cook, tossing occasionally, until browned and tender, 3-6 minutes more. Season with salt and pepper. Remove from pan and set aside.\nHeat another large drizzle of olive oil in same pan over medium-high heat. Add sausage, breaking up meat into pieces. Cook, tossing, until crisp at edges and no longer pink, 4-5 minutes. Add a pinch of chili flakes (to taste) and cook another 30 seconds. TIP: Skip the chili flakes if anyone at your table isn’t a fan of spicy heat—you can always add them at the end.",
-  image_url: "images/pasta.jpg",
+  image_url: "images/pancake.jpg",
   time: "1h",
   servings: 2,
   complexity: 4,
@@ -102,6 +102,8 @@ let checkData = () => {
     .catch(error => {
       fillColors();
       setTimeout(fillRecipes, 3000);
+
     });
+
 }
 checkData();
