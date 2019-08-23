@@ -48,7 +48,7 @@ document.getElementById('save').onclick = () => {
 
   if (checkInputs(name, time, img, servings, description) == false) {
     return;
-  };
+  }
 
   axios.patch(`http://localhost:8080/recipes/${id}`, {
       name: name.value,

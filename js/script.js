@@ -150,6 +150,7 @@ class RecipesDivFactory {
     imageDiv.appendChild(img);
     return imageDiv;
   }
+
   createName() {
     let recipeNameLink = document.createElement('a');
     recipeNameLink.className = 'recipe-title-link';

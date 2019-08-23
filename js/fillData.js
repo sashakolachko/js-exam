@@ -85,8 +85,6 @@ let recipes = [{
   color_id: 5
 }];
 
-
-
 let fillColors = () => {
   for (color of colors) {
     axios.post('http://localhost:8080/colors', color);
@@ -104,7 +102,6 @@ let checkData = () => {
     .catch(error => {
       fillColors();
       setTimeout(fillRecipes, 3000);
-      console.log(error);
     });
 }
 checkData();

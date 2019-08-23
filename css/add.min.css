@@ -1,1 +1,41 @@
-.update-form__button{background-color:#3e862c}
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+.update-form__button {
+  background-color: #3e862c
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px
+}
+
+.update-form {
+  display: none
+}
+
+.generated-inputs {
+  margin-top: 30px;
+  display: none
+}
+
+.generated-inputs__item {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px
+}
+
+.generated-inputs__input {
+  width: 225px;
+  box-sizing: border-box;
+  padding: 6px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #d4d3d1
+}
+
+.color-option {
+  color: #fff
+}

@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+$main-font: 'Quicksand', sans-serif;
+
 .update-form {
   &__button {
     background-color: #3e862c;
   }
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.update-form {
+  display: none;
+}
+
+.generated-inputs {
+  margin-top: 30px;
+  display: none;
+
+  &__item {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__input {
+    width: 225px;
+    box-sizing: border-box;
+    padding: 6px;
+    font-family: $main-font;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #d4d3d1;
+  }
+}
+
+.color-option {
+  color: #fff;
 }
